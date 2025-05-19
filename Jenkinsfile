@@ -20,7 +20,7 @@ pipeline {
 
     stage('Deploy with Terraform') {
       steps {
-        dir('terraform') {
+        dir('Terraform') {
           sh 'terraform init'
           sh 'terraform apply -auto-approve'
         }
