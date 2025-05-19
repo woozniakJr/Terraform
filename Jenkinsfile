@@ -18,13 +18,6 @@ pipeline {
       }
     }
 
-    stage('Pull Images from Docker Hub') {
-      steps {
-        sh 'docker pull ibrahim372/fr:latest'
-        sh 'docker pull ibrahim372/bk:latest'
-      }
-    }
-
     stage('Deploy with Terraform') {
       steps {
         dir('terraform') {
