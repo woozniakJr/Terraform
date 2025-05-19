@@ -22,7 +22,7 @@ resource "kubernetes_deployment" "frontend" {
       spec {
         container {
           name  = "frontend-container"
-          image = "ibrahim372/fr"
+          image = "mouhamed2555/frontend"
           image_pull_policy = "Always"
 
           port {
