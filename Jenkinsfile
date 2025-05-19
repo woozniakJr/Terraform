@@ -28,8 +28,8 @@ pipeline {
     stage('Deploy with Terraform') {
       steps {
         dir('terraform') {
-          sh 'sudo terraform init'
-          sh 'sudo terraform apply -auto-approve'
+          sh 'terraform init'
+          sh 'terraform apply -auto-approve'
         }
       }
     }
